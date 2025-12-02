@@ -8,6 +8,8 @@ class Banco():
   def criar_conta(self,id,banco,titular,saldo):
     nova_conta = Conta(id,banco,titular,saldo)
     self.contas.append(nova_conta)
+
+    
     print("Conta criada com sucesso!")
     return nova_conta
   

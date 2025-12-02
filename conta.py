@@ -1,10 +1,11 @@
 class Conta():
-  def __init__(self, id, banco, titular,saldo):
+  def __init__(self, id,saldo,senha):
     self.id = id 
-    self.banco = banco 
-    self.titular = titular
+#    self.banco = banco 
+#    self.titular = titular
     self.saldo = 0.0
     self.saldo = saldo
+    self.senha = senha
   
   def depositar(self,valor):
     if valor>0:
@@ -28,4 +29,3 @@ class Conta():
   
 
 # Depois fazer o Extrato
-  
