@@ -43,6 +43,14 @@ class Banco():
     if conta_destino is None:
       print("Conta de destino não encontrada.")
       return
+
+    if not isinstance(conta_origem, Conta):
+        print("Objeto de origem não é uma Conta válida.")
+        return
+    if not isinstance(conta_destino, Conta):
+        print("Objeto de destino não é uma Conta válida.")
+        return
+
     if valor <= 0:
       print("O valor da transferência deve ser maior que 0.")
       return
